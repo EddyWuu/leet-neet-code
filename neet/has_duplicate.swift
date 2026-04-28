@@ -41,3 +41,10 @@ class Solution {
 // Time: O(n) — one pass through the array, and set lookups are O(1)
 // Space: O(n) — in the worst case the set stores every element, same as the input array
 // cleaner solution than the dictionary approach, since we don't care about counting occurences, just whether we've seen the number before or not.
+
+/// TEST CASES
+var tests = ([1,2,3,4,5,6,6,6,6,43,23,3,4,56], [0], [1,1,1,2], [])
+print(Solution().hasDuplicate(tests.0)) // true
+print(Solution().hasDuplicate(tests.1)) // false
+print(Solution().hasDuplicate(tests.2)) // true
+print(Solution().hasDuplicate(tests.1)) // false

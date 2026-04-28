@@ -53,3 +53,10 @@ class Solution {
 // Review
 // Time: o(s + t), because has to go through both strings
 // Space: o(s + t), needs two dictionaries
+
+/// TEST CASES
+var tests = [("racecar", "carrace"), ("thumb", "mubth"), ("", ""), ("race", "races")]
+print(Solution().isAnagram(tests[0].0, tests[0].1)) // true
+print(Solution().isAnagram(tests[1].0, tests[1].1)) // true
+print(Solution().isAnagram(tests[2].0, tests[2].1)) // true
+print(Solution().isAnagram(tests[3].0, tests[3].1)) // false
